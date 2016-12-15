@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "315232890269",
+    "project_id": "bizgen-149608"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315232890269:android:7ae82c7b61a28b2a",
+        "android_client_info": {
+          "package_name": "co.bizgen.android.googleauthsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315232890269-9k14qf30oqgq7lpbrr075i2qtvr2e2km.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.bizgen.android",
+            "certificate_hash": "6212F3835A18661369ED0A01571744B6A1F7C8F7"
+          }
+        },
+        {
+          "client_id": "315232890269-9bnf794o63pkn198hl6lhcp29t55lqe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcqykbVQMuknotXUdh-Xh4Ioswc-fHGWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
