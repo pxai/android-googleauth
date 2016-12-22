@@ -68,10 +68,27 @@ public class MainActivity extends AppCompatActivity  implements
                     public void onResult(Status status) {
                         Log.d("PELLODEBUG", "Logged out");
                         mStatusTextView.setText("Logged out");
+
+                        // revokeAccess();
                     }
                 });
 
     }
+
+    /**
+     * Revoke access to our app
+     */
+    private void revokeAccess() {
+        Auth.GoogleSignInApi.revokeAccess(mGoogleApiClient).setResultCallback(
+                new ResultCallback<Status>() {
+                    @Override
+                    public void onResult(Status status) {
+                        Log.d("PELLODEBUG", "revoked access");
+                        mStatusTextView.setText("revoked access");
+                    }
+                });
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
