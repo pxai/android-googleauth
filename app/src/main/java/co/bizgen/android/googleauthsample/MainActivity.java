@@ -62,8 +62,15 @@ public class MainActivity extends AppCompatActivity  implements
 
     private void signOut() {
         Log.d("PELLODEBUG","Trying to sign out");
-        //Intent signInIntent = Auth.GoogleSignInApi.get(mGoogleApiClient);
-        //startActivityForResult(signInIntent, RC_SIGN_IN);
+        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
+                new ResultCallback<Status>() {
+                    @Override
+                    public void onResult(Status status) {
+                        Log.d("PELLODEBUG", "Logged out");
+                        mStatusTextView.setText("Logged out");
+                    }
+                });
+
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
