@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity  implements
                     public void onResult(Status status) {
                         Log.d("PELLODEBUG", "Logged out");
                         mStatusTextView.setText("Logged out");
-
+                        // e should do something like this.
                         // revokeAccess();
                     }
                 });
@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity  implements
             info = "Signed in: "  + acct.getDisplayName();
             info += "UserId: " + acct.getId();
             mStatusTextView.setText(info);
+            // Image not working but url seems to be correct.
             avatar.setImageURI(acct.getPhotoUrl());
             Log.d("PELLODEBUG", "Sign in SUCCESS: " + info +". Avatar: "+ acct.getPhotoUrl());
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
